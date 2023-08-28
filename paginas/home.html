@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../styles/home.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <title>Home</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+        <nav class="overlay-menu">
+            <ul class="lista-menu">
+                <li class="lista-menu-item"><a class="lista-menu-link" href="../paginas/home.html">Home</a></li>
+                <li class="lista-menu-item"><a class="lista-menu-link" href="../paginas/personagem.html">Personagem</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Primeiro Vingadores</h2>
+
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="../IMG/capitao-america-avengers.png" alt="capitão américa"></div>
+                <div class="swiper-slide"><img src="../IMG/gaviao-arqueiro-avengers.png" alt="gavião arqueiro">
+                </div>
+                <div class="swiper-slide"><img src="../IMG/homem-de-ferro-avenger.png" alt="homem de ferro"></div>
+                <div class="swiper-slide"><img src="../IMG/hulk-avengers.png" alt="hulk"></div>
+                <div class="swiper-slide"><img src="../IMG/thor-avengers.png" alt="thor"></div>
+                <div class="swiper-slide"><img src="../IMG/viuva-negra-avengers.png" alt="viuva negra"></div>
+
+                ...
+            </div>
+            <!-- If we need pagination -->
+
+
+            <!-- If we need navigation buttons -->
+            <!-- <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
+        </div>
+
+        <div class="card">
+            <div class="card__descricao">
+                <div class="descricao">
+                    <h3 class="descricao__titulo">Onde assistir os produtos Marvel</h3>
+                    <h2 class="descricao__titulo-livro">Disney Plus</h2>
+                    <p class="descricao__texto">Em 31 de agosto de 2009, The Walt Disney Company comprou a Marvel
+                        Entertainment por US$ 4 bilhões.</p>
+                </div>
+                <img src="../IMG/disney-marvel.jpg" class="descricao__imagem" alt="disney plus e marvel">
+            </div>
+
+            <div class="card__botoes">
+                <ul class="botoes">
+                    <li class="botoes__itens"><img class="botao__imagem" src="../IMG/mickey-icon.png" alt="mickey"></li>
+                    <li class="botoes__itens"><img class="botao__imagem" src="../IMG/marvel-icon.png"
+                            alt="adiionar no carrinho de compras"></li>
+                </ul>
+
+                <a href="https://www.disneyplus.com/pt-br/brand/marvel" target="_blank" class="botoes__ancora">Saiba
+                    mais</a>
+            </div>
+        </div>
+    </section>
+    <section class="historia">
+        <h2 class="titulo-historia">
+            História da Marvel
+        </h2>
+        <div class="container-historia">
+            <p class="texto-historia">A Marvel Entertainment foi fundada em 1939, nos Estados Unidos, por Martin
+                Goodman. A empresa, conhecida
+                originalmente pelos quadrinhos, se transformou em uma das principais empresas do entretenimento mundial,
+                com
+                grande presença entre os filmes de maior bilheteria da história.</p>
+            <img src="../IMG/logo-marvel.webp" alt="logo da marvel" class="imagem-historia">
+        </div>
+    </section>
+    <hr>
+    <footer class="rodape">
+        <section class="rodape-section">
+            <div class="rodape-section2">
+                <a href="https://www.instagram.com/marvel/" target="_blank" class="rodape-link">INSTAGRAM</a>
+                <a href="https://www.linkedin.com/in/felipeaateixeira/" target="_blank" class="rodape-link">LINKEDIN</a>
+            </div>
+            <div>
+                <a href="https://www.marvel.com/" target="_blank" class="rodape-link">MARVEL</a>
+            </div>
+
+        </section>
+        <div class="rodape-desenvolvido">
+            <a class="rodape-link-github" href="https://github.com/FeAveraldo" target="_blank">Desenvolvido por Felipe Averaldo</a>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            }
+
+        });
+    </script>
+</body>
+
+</html>

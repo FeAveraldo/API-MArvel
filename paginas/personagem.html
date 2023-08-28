@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/personagem.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+        <nav class="overlay-menu">
+            <ul class="lista-menu">
+                <li class="lista-menu-item"><a class="lista-menu-link" href="../paginas/home.html">Home</a></li>
+                <li class="lista-menu-item"><a class="lista-menu-link" href="../paginas/personagem.html">Personagem</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="input-container">
+            <input type="text" class="input" value="Escreva o nome do heroi" placeholder="Escreva o nome do heroi" id="input-box">
+            <button class="button" id="submit-button">Enviar</button>
+        </div>
+        <div class="list"></div>
+        <div class="display-container" id="show-container"></div>
+    </div>
+
+
+    <script src="../JS/api-data.js"></script>
+    <script src="../JS/api.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+:root {
+    --fonte-oswald: 'Oswald';
+}
+body {
+    background: url(../IMG/capitao-america.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* -----------------toggle----------- */
+
+.menu-toggle {
+    display: none;
+  }
+  
+  .menu-icon {
+    display: block;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 999;
+    font-size: 24px;
+  }
+  
+  .overlay-menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 998;
+    transition: left 0.3s ease;
+    background-image: url(../IMG/marvel-p&b.webp);
+  }
+  
+ 
+  
+  .lista-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 2.5em 1em;
+  }
+  
+  .overlay-menu, .lista-menu, .lista-menu-item, .lista-menu-link {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-family: var(--fonte-oswald);
+    font-weight: 700;
+    text-shadow: 1px 1px 1px white;
+  }
+  
+  .menu-toggle:checked ~ .overlay-menu {
+    left: 0;
+  }
+
+
+/* ----------------CARROSSEL----------------------- */
+
+.carrossel__titulo {
+    color: var(--laranja);
+    background-color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 1em 0 0.5em 0;
+    margin-top: 2.5em ;
+}
+
+.swiper-wrapper {
+    margin-left: .5em;
+}
+
+.swiper-slide {
+    margin-top: 0.5em;
+}
+
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    display: none;
+}
+
+.swiper-pagination {
+    position: fixed;
+    padding: .5em 0;
+}
+
+/* ------------------CARD------------- */
+
+.card__descricao {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .5em 0;
+    padding: 1em 0;
+}
+
+.card__botoes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.botoes {
+    display: flex;
+}
+
+.card {
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 25);
+    border-radius: 10px;
+    margin: 1em;
+    padding: 1em;
+}
+
+.descricao__titulo {
+    color: rgb(46, 0, 46);
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.descricao__titulo-livro {
+    color: rgb(46, 0, 46);
+    font-size: 24px;
+    font-weight: 700;
+    margin: .5em 0;
+}
+
+.descricao__texto {
+    font-size: 14px;
+    
+}
+
+.botoes__itens {
+    margin: .5em 0;
+}
+
+.botoes__ancora {
+    background-color: orange;
+    padding: 1em 2.2em;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 3px;
+    margin-top: 5px;
+    height: 70%;
+    width: 100%;
+}
+
+.descricao__imagem {
+    border-radius: 5px;
+    width: 45%;
+    height: 45%;
+}
+
+.botao__imagem {
+    width: 60%;
+    height: 60%;
+}
+
+.descricao {
+    margin-right: .5em;
+}
+
+/* ------------------HISTORIA MARVEL------ */
+
+.titulo-historia,
+.container-historia {
+    background-color: white;
+    text-align: center;
+    padding: 0.5em 0;
+    font-size: 18px;
+    margin: .4em;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px black;
+}
+.container-historia {
+    background: url(../IMG/fundo-marvel2.avif);
+}
+.titulo-historia {
+    text-transform: uppercase;
+    font-family: var(--fonte-oswald);
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.container-historia {
+    padding: 0.3em;
+}
+
+.texto-historia {
+    background-color: white;
+    margin: 1em;
+    border-radius: 5px;
+    padding: 0.3em;
+    box-shadow: 1px 1px 2px black; 
+}
+
+.imagem-historia {
+    width: 70%;
+    height: 40%;
+    border-radius: 5px;
+}
+
+/* -------RODAPE----------- */
+
+.rodape {
+    margin: 1em 1em 0 1em;
+    padding: 1em;
+}
+
+.rodape-section {
+    display: flex;
+    justify-content: space-around;
+}
+
+.rodape-section2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: .5em;
+    text-decoration: none;
+}
+
+.rodape-link {
+    text-decoration: none;
+    font-family: var(--fonte-oswald);
+    color: aliceblue;
+}
+
+.imagem-rodape-icon {
+    width: 30%;
+    height: 30%;
+}
+
+.rodape-desenvolvido {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.rodape-link-github {
+    text-decoration: none;
+    color: white;
+}
+
+
+@media screen and (min-width: 1024px) {
+    
+.carrossel {
+    margin: 8em;
+}
+
+.botoes__ancora {
+    width: 58%;
+}
+
+.imagem-historia {
+    width: 40%;
+    height: 20%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
